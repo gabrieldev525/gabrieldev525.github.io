@@ -33,10 +33,15 @@ body, html { margin: 0; padding: 0; height: 100%; }
     }
 }
 
+/* about */
+#about { background-color: rgba(39, 54, 58, .5); display: block; border-radius: 24px; width: 30%; margin: 3% auto; padding: 1% 2%; }
+#about h1 { color: #ff8e40; font-size: 1.3em; }
+#about img { width: 13%; border-radius: 50%; display: block; margin: 2% auto; }
+#about a { color: rgb(197, 197, 197); display: block; width: 100%; margin: 2% auto; text-align: justify;}
 
 /* thumb buttons */
 #thumb #buttons { display: block; width: 100%; margin-top: 3%;}
-#thumb .button { display: inline-block; cursor: pointer; transition: 0.25s; background-color: #0d5e77; padding: 1.5% 3%; margin-left: 3%; border-radius: 24px; }
+#thumb .button { margin: 0 2%; display: inline-block; cursor: pointer; transition: 0.25s; background-color: #0d5e77; padding: 1.5% 3%;  border-radius: 24px; }
 #thumb .button:hover { background-color: #27363a;  }
 #thumb .button:hover > a {  color: #ff8e40; }
 #thumb .button a { color: #fff;}
@@ -51,10 +56,7 @@ body, html { margin: 0; padding: 0; height: 100%; }
 #menu li#menu-item a { color: #fff; text-decoration: none; transition: 0.25s; padding-bottom: 6%;}
 #menu li#menu-item a:hover { border-bottom: 3px solid #0d5e77; }
 
-/* about */
-#about { display: block; width: 100%; }
-#about img { width: 13%; border-radius: 50%; display: block; margin: 2% auto; }
-#about a { display: block; width: 30%; margin: 2% auto; text-align: justify;}
+
 
 /* portfolio */
 #portfolio {  display: block; }
