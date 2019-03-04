@@ -23,6 +23,11 @@ $(window).on("resize", function() {
     }
 });
 
+// thumb buttons click
+$("#thumb #contact-button").click(function() {
+    window.open("#contato","_self");
+});
+
 // open the mobile-menu
 $("#menu .side-item").click(function() {
     $("#mobile-menu").show();
