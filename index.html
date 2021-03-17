@@ -1,155 +1,132 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Gabriel Victor">
-        <meta name="description" content="...">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Gabriel Victor'>
+    <meta name='description' content='...'>
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Gabriel Victor - Desenvolvedor Mobile e Web</title>
-    </head>
-    <body>
-        <!-- the thumb -->
-        <div id="thumb">
-            <div id="content">
-                <div class="middle" id="center-content">
-                    <a id="title">Gabriel Victor - Desenvolvedor Web e Mobile</a>
+    <title>Gabriel Victor - Desenvolvedor Fullstack</title>
+    <link rel='stylesheet' href='./css/index.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  </head>
 
-                    <div id="about">
-                        <h1>Sobre</h1>
+  <body>
+    <div id='menu'>
+      <a href='#'>Inicio</a>
+      <a href='#about-me'>Sobre mim</a>
+      <a href='#projects'>Portfólio</a>
+      <a href='#skills'>Habilidades</a>
+      <a href='#contact'>Contato</a>
+    </div>
+    <div id='header'>
+      <div class='left'>
+        <h1>Gabriel <span class='title-highlight'>Victor</span></h1>
+        <span class='description'>Desenvolvedor fullstack e estudande de UI/UX design</span>
 
-                        <a>Sou um jovem desenvolvedor técnico em redes de computadores e estudo programação a mais de 4 anos. Sempre procuro realizar o melhor serviço, para que no final o cliente tenha em mãos tudo aquilo que ele procurava. Qualidade, rapidez e eficiência tudo isso em um só lugar.</a>
-                    </div>
+        <div class='social-media'>
+          <a href='https://github.com/gabrieldev525' target='_blank'><i class='fab fa-github'></i></a>
+          <a href='https://instagram.com/gabrieldev525' target='_blank'><i class='fab fa-instagram'></i></a>
+          <a href='mailto:gvictor525.gv@gmail.com'><i class='fas fa-envelope'></i></a>
+        </div>
+      </div>
+      <div class='right'>
+        <!-- <img src='./images/photo.jpg' class='photo' /> -->
+      </div>
+    </div>
+    <div id='about-me' class='section-padding'>
+      <h1 class='title'>Sobre mim</h1>
+      <span class='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </span>
+    </div>
+    <div id='projects' class='section-padding'>
+      <h1 class='title'>Meus trabalhos</h1>
+      <span class='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
 
-                    <div id="buttons">
-                        <div class="button" id="contact-button">
-                            <a>Contato</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class='categories'>
+        <button class='active'>Sites</button>
+        <button>Aplicativos</button>
+        <button>UI/UX Design</button>
+      </div>
+
+      <div class='project-list'>
+        <div class='item'>
+          <img src='./images/projeto_1.png' />
+          <div class='info'>
+            <h1 class='name'>Nome do projeto</h1>
+            <span class='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+          </div>
+        </div>
+        <div class='item'>
+          <img src='./images/projeto_1.png' />
+          <div class='info'>
+            <h1 class='name'>Nome do projeto</h1>
+            <span class='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+          </div>
+        </div>
+        <div class='item'>
+          <img src='./images/projeto_1.png' />
+          <div class='info'>
+            <h1 class='name'>Nome do projeto</h1>
+            <span class='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='skills' class='section-padding'>
+      <h1 class='title'>Habilidades</h1>
+      <span class='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+      <div class='skills-list'>
+        <div class='item'>
+          <i class='fab fa-react skill-icon'></i>
+          <span>React</span>
         </div>
 
-        <!-- side menu -->
-        <div id="mobile-menu">
-            <i class="fas fa-times-circle" id="close"></i>
-            <ul>
-                <li class="menu-item" id="inicio-item"><a href="#">Inicio</a></li>
-                <li class="menu-item" id="about-item"><a href="#about">Sobre</a></li>
-                <li class="menu-item" id="projects-item"><a href="#projects">Projetos</a></li>
-                <li class="menu-item" id="habilidades-item"><a href="#habilidades">Habilidades</a></li>
-                <li class="menu-item" id="contact-item"><a href="#contato">Contato</a></li>
-            </ul>
+        <div class='item'>
+          <i class='fab fa-react skill-icon'></i>
+          <span>React</span>
         </div>
 
-        <!-- menu -->
-        <div id="menu">
-            <ul>
-                <li class="menu-item"><a href="#">Inicio</a></li>
-                <li class="menu-item"><a href="#about">Sobre</a></li>
-                <li class="menu-item"><a href="#projects">Projetos</a></li>
-                <li class="menu-item"><a href="#habilidades">Habilidades</a></li>
-                <li class="menu-item"><a href="#contato">Contato</a></li>
-                <li class="side-item"><i class="fas fa-bars"></i></li>
-            </ul>
+        <div class='item'>
+          <i class='fab fa-react skill-icon'></i>
+          <span>React</span>
+        </div>
+      </div>
+    </div>
+
+    <div id='contact' class='section-padding'>
+      <h1 class='title'>Contato</h1>
+      <span class='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+      <div class='content'>
+        <div class='contact-list'>
+          <div class='left'>
+            <a href='https://github.com/gabrieldev525'><i class='fab fa-github'></i>&nbsp;@gabrieldev525</a>
+            <a href='https://github.com/gabrieldev525'><i class='fab fa-github'></i>&nbsp;@gabrieldev525</a>
+            <a href='https://github.com/gabrieldev525'><i class='fab fa-github'></i>&nbsp;@gabrieldev525</a>
+          </div>
+          <div class='right'>
+            <a href='https://github.com/gabrieldev525'><i class='fab fa-github'></i>&nbsp;@gabrieldev525</a>
+            <a href='https://github.com/gabrieldev525'><i class='fab fa-github'></i>&nbsp;@gabrieldev525</a>
+          </div>
         </div>
 
-        <!-- portfolio -->
-        <div id="portfolio">
-            <h1>Portfolio</h1>
+        <img src='./images/contact.png' class='contact-illustration'>
+      </div>
+    </div>
+    <footer>
+      <span>Gabriel Victor - 2020</span>
+      <div class='social-media'>
+        <a href='https://github.com/gabrieldev525' target='_blank'><i class='fab fa-github'></i></a>
+        <a href='https://instagram.com/gabrieldev525' target='_blank'><i class='fab fa-instagram'></i></a>
+        <a href='mailto:gvictor525.gv@gmail.com'><i class='fas fa-envelope'></i></a>
+      </div>
+    </footer>
 
-            <div id="projects">
-                <div class="content">
-                    <img src="images/cyber_redes.png" alt="">
-                </div>
-                <div class="content">
-                    <img src="images/acae_web.png" alt="">
-                </div>
 
-                <div class="content">
-                    <img src="images/teckids.jpg" alt="">
-                </div>
-
-                <div class="content">
-                    <img src="images/odontolar.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <!-- habilidades -->
-        <div id="habilidades">
-            <h1><i class="fas fa-code"></i>Habilidades</h1>
-
-            <div id="content">
-
-                <div class="item">
-                    <i class="fab fa-html5"></i>
-                    <a class="title">Html 5</a>
-                </div>
-
-                <div class="item">
-                    <i class="fab fa-css3-alt"></i>
-                    <a class="title">css 3</a>
-                </div>
-
-                <div class="item">
-                    <i class="fab fa-js"></i>
-                    <a class="title">java script</a>
-                </div>
-
-                <div class="item">
-                    <i class="fab fa-python"></i>
-                    <a class="title">python</a>
-                </div>
-
-                <div class="item">
-                    <i class="fab fa-php"></i>
-                    <a class="title">php</a>
-                </div>
-
-                <div class="item">
-                    <i class="fab fa-java"></i>
-                    <a class="title">java</a>
-                </div>
-
-                <div class="item">
-                    <i class="fas fa-database"></i>
-                    <a class="title">banco de dados</a>
-                </div>
-
-                <div class="item">
-                    <i class="fas fa-code-branch"></i>
-                    <a class="title">git</a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- contato -->
-        <!-- <div id="contato">
-            <h1>Contato</h1>
-            <form action="">
-                <input type="text" name="name" placeholder="Nome">
-                <input type="email" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Mensagem"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </div> -->
-
-        <!-- footer -->
-        <footer>
-            <a>&copy;Gabriel Victor - 2019</a>
-            <div id="social-media">
-                <a class="social-item" href="https://fb.com/gabrieldev525" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="social-item" href="https://github.com/gabrieldev525" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </footer>
-
-        <!-- scripts -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+    <!-- scripts -->
+    <script src='./js/index.js'></script>
+  </body>
 </html>
