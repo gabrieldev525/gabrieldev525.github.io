@@ -8,6 +8,8 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    outline: none;
 }
 
 :root {
@@ -121,10 +123,11 @@ body, html {
 
 /* Header right */
 #header .right .photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 4px solid var(--contrast-color-2);
+    width: 300px;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    /* border-radius: 50%;
+    border: 4px solid var(--contrast-color-2); */
 }
 
 /* About me */
@@ -173,6 +176,10 @@ body, html {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+}
+
+#projects .project-list .no-result {
+    color: var(--text-color-gray);
 }
 
 #projects .project-list .item {
@@ -236,8 +243,9 @@ body, html {
     height: 100px;
     background-color: var(--contrast-color-3);
 }
-#skills .skills-list .item:not(:first-child) {
-    margin-left: 4rem;
+#skills .skills-list .item {
+    margin-right: 4rem;
+    margin-bottom: 4rem;
 }
 #skills .skills-list .item .skill-icon {
     font-size: 2rem;
@@ -276,9 +284,17 @@ body, html {
     margin-left: 6rem;
 }
 #contact .content .contact-list a {
-    color: var(--bg-dark-color);
+    color: var(--text-color-gray);
     margin-bottom: 1rem;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#contact .content .contact-list a i {
+    font-size: 1.3rem;
+    margin-right: 0.8rem;
+    color: var(--bg-dark-color);
 }
 #contact .content .contact-illustration {
     width: 30%;
