@@ -12,15 +12,33 @@
   </head>
 
   <body>
+    <div id='side-menu'>
+      <div class='menu-header'>
+        <i class='fas fa-times' id='close-side-menu'></i>
+      </div>
+
+      <div class='items'>
+        <a class='side-menu-item' href='#'>Inicio</a>
+        <a class='side-menu-item' href='#about-me'>Sobre mim</a>
+        <a class='side-menu-item' href='#projects'>Portfólio</a>
+        <a class='side-menu-item' href='#skills'>Habilidades</a>
+        <a class='side-menu-item' href='#contact'>Contato</a>
+      </div>
+    </div>
+
     <div id='menu'>
-      <a href='#'>Inicio</a>
-      <a href='#about-me'>Sobre mim</a>
-      <a href='#projects'>Portfólio</a>
-      <a href='#skills'>Habilidades</a>
-      <a href='#contact'>Contato</a>
+      <a class='menu-item' href='#'>Inicio</a>
+      <a class='menu-item' href='#about-me'>Sobre mim</a>
+      <a class='menu-item' href='#projects'>Portfólio</a>
+      <a class='menu-item' href='#skills'>Habilidades</a>
+      <a class='menu-item' href='#contact'>Contato</a>
+
+      <a id='side-menu-button'><i class='fas fa-bars'></i></a>
     </div>
     <div id='header'>
       <div class='left'>
+        <img src='./images/photo.jpg' class='photo' />
+
         <h1>Gabriel <span class='title-highlight'>Victor</span></h1>
         <span class='description'>Desenvolvedor fullstack e estudande de UI/UX design</span>
 
@@ -31,7 +49,7 @@
         </div>
       </div>
       <div class='right'>
-        <img src='./images/photo.jpg' class='photo' />
+
       </div>
     </div>
     <div id='about-me' class='section-padding'>

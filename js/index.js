@@ -92,6 +92,28 @@ window.onload = () => {
       menu.classList.remove('menu-secondary')
   }
 
+  // Side menu
+  const sideMenuButton = document.getElementById('side-menu-button')
+  const sideMenuContent = document.getElementById('side-menu')
+  sideMenuButton.onclick = () => {
+    sideMenuContent.style.display = 'flex';
+    document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
+  }
+  const sideMenuCloseButton = document.getElementById('close-side-menu')
+  sideMenuCloseButton.onclick = () => {
+    sideMenuContent.style.display = 'none';
+    document.getElementsByTagName('body')[0].style.overflowY = 'scroll'
+  }
+
+  const sideMenuItem = document.getElementsByClassName('side-menu-item')
+  for(let item of sideMenuItem) {
+    item.onclick = () => {
+      sideMenuContent.style.display = 'none';
+      document.getElementsByTagName('body')[0].style.overflowY = 'scroll'
+    }
+  }
+
+  // Projects
   renderProjectType()
 
   const siteButton = document.getElementById(projectsTypeButtonId[PROJECT_TYPE_SITES])
